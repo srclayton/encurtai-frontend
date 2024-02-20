@@ -1,0 +1,26 @@
+:root{
+    --color-1: #F5F5F5; /*cor background*/
+    --color-2: #1B2792; /*cor primária*/
+    --color-3: #4863CE; /*cor sevcundária*/
+    --color-4: #eff5fa;
+    --color-6: #495170;
+}
+body{
+    background: var(--color-1);
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+#root{
+    /* font-size: 18px; */
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.red{
+    background-color: red
+}
+h1,h6{
+    margin:0;
+}

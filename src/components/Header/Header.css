@@ -1,0 +1,29 @@
+nav{
+    margin:20px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+.nav__itens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.nav__itens a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease-in, font-size 0.2s ease-in; 
+}
+.nav__itens a:hover {
+    font-size: 1.1em;
+    color: #000;
+    font-weight: 10000;
+}
+.nav__logo a img {
+    height: 50px; 
+    width: auto;
+}

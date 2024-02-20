@@ -1,0 +1,6 @@
+
+@media(max-width: 768px){
+    .ReactModal__Content{
+        min-width: 80%;
+    }
+}
