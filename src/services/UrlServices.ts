@@ -8,9 +8,12 @@ export default class UrlServices {
         originalUrl: url,
       });
       return response.data;
-    } catch (e) {
+    } catch (e: unknown) {
       const expiredTokenRegex =
         /The token has expired at \d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z/;
+      // eslint-disable-next-line
+      // @ts-ignore
+      console.log(e);
       // eslint-disable-next-line
       // @ts-ignore
       if (expiredTokenRegex.test(e.response.data.message)) {
