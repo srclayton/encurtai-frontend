@@ -32,6 +32,7 @@ export default function ModalComponent(props: TModalProps) {
       boxShadow: "0 4px 30px rgba(0, 0, 0, 0.30)",
       backdropFilter: "blur(3.1px)",
       border: "1px solid rgba(255, 255, 255, 0.61)",
+      fontWeight: "900",
     },
   };
   return (

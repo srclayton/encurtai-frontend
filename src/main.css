@@ -10,6 +10,7 @@ body{
     font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
+    font-weight: 600;
 }
 #root{
     /* font-size: 18px; */
