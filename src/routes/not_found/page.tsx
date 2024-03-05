@@ -1,21 +1,19 @@
 import { useLocation } from "react-router-dom";
 import api from "../../lib/api";
 import TokenServices from "../../services/TokenServices";
-import { useEffect } from "react";
 
 function NotFound() {
-  useEffect(() => {
-    async function checkToken() {
+  const { pathname } = useLocation();
+  if (!pathname) return null;
+  const fetchData: () => void = async () => {
+    try {
       const hasToken = await TokenServices.hasTokenCookies();
       if (!hasToken) {
         await TokenServices.login();
       }
+    } catch (e) {
+      return window.location.replace("/");
     }
-    checkToken();
-  }, []);
-  const { pathname } = useLocation();
-  if (!pathname) return null;
-  const fetchData: () => void = async () => {
     try {
       const response = await api.get(`/url/get${pathname}`);
       window.location.replace(response.data.originalUrl);
