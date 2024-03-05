@@ -54,9 +54,9 @@ function Hero() {
             )}
             {shortenedUrl && (
               <>
-                <h3>Sucesso!</h3>
+                <h3 className="strong">Sucesso!</h3>
                 <hr />
-                <h5>
+                <h5 className="strong">
                   Parabéns! Sua URL foi encurtada com sucesso:
                   <input
                     className="u-full-width input__url"

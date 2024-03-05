@@ -4,3 +4,7 @@
         min-width: 80%;
     }
 }
+
+ReactModal__Content * {
+    font-width: 600;
+}
