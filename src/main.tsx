@@ -28,11 +28,16 @@ const router = createBrowserRouter([
     element: <Contact />,
   },
 ]);
+const isPathValid = !!(
+  window.location.pathname === "/" ||
+  window.location.pathname === "/sobre" ||
+  window.location.pathname === "/contato"
+);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Header />
+    {isPathValid && <Header />}
     <RouterProvider router={router} />
-    <Footer />
+    {isPathValid && <Footer />}
   </React.StrictMode>,
 );
