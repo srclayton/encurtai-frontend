@@ -25,3 +25,8 @@ body{
 h1,h6{
     margin:0;
 }
+
+ul,li,a{
+    text-decoration: none; /* Remove sublinhado padrão */
+    color: #333; /* Define a cor do texto */
+}
