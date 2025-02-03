@@ -64,7 +64,7 @@ function Hero() {
                     id="urlOutput"
                     readOnly
                     onClick={copyText}
-                    value={`encurtai.me/${shortenedUrl}`}
+                    value={`${window.location.host}/${shortenedUrl}`}
                   />
                   <button
                     onClick={copyText}
